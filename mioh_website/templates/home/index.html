@@ -1,0 +1,48 @@
+{% extends "home/base.html" %}
+{% load static %}
+
+{% block content %}
+<div id="particles-js"></div>
+<!-- ======= Navbar ======= -->
+<section id="header">
+    <div class="container-fluid shadow-sm p-3 bg-body">
+        <ul id="navbar">
+            <li><a class="active" href="home/"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="contact/"><i class="fa-solid fa-message"></i></a></li>
+            <li id="lg-bag"><a href="store/"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            <a href="#" id="close"><i class="far fa-x"></i></a>
+        </ul>
+    </div>
+    <div id="mobile">
+        <a href="store/"><i class="fa-solid fa-bag-shopping"></i></a>
+        <i id="bar" class="fa-solid fa-align-justify"></i>
+    </div>
+</section>
+
+
+<section id="hero">
+    <div class="container-fluid mx-auto text-center">
+        <img class="img-fluid rounded" src="{% static 'home/img/capeduo.png' %}" alt="...">
+        <h1>Join the Cape Squad, unlock instrumentals, and begin <br> writing your next hit song! Website and app coming soon!</h1>
+    </div>
+
+    <div class="social-links">
+        <h2>Connect With Us</h2>
+        <div class="icons">
+            <a class="btn btn-floating" href="https://www.instagram.com/musicisourhero/" role="button"><i class="fab fa-instagram"></i></a>
+            <a class="btn btn-floating" href="https://www.facebook.com/musicisourheroMIOH" role="button"><i class="fab fa-facebook"></i></a>
+            <a class="btn btn-floating" href="https://twitter.com/MUSICISOURHERO" role="button"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</section>
+
+<section id="footer">
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container-fluid">
+            <p>Copyright © 2022 Nice Rack LLC<br>
+                MUSIC IS OUR HERO®!<br>
+                All Rights Reserved<p>
+        </div>
+    </footer>
+</section>
+{% endblock %}

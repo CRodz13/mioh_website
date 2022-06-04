@@ -44,7 +44,7 @@ LOCALE_PATHS = [str(ROOT_DIR / "locale")]
 DATABASES = {
     "default": env.db(
         "DATABASE_URL",
-        default="postgres:///mioh_website",
+        default="postgres:///miohdb",
     ),
 }
 DATABASES["default"]["ATOMIC_REQUESTS"] = True
@@ -87,6 +87,7 @@ THIRD_PARTY_APPS = [
 LOCAL_APPS = [
     "mioh_website.users",
     # Your stuff: custom apps go here
+    "mioh_website.home",
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
